@@ -16,8 +16,9 @@
             <h2>体重を記録</h2>
             <form id="weight-form">
                 <div class="form-group">
-                    <label for="date-input">日付</label>
-                    <input type="date" id="date-input" required>
+                    <label for="datetime-input">日時</label>
+                    <input type="datetime-local" id="datetime-input" required>
+                    <button type="button" id="now-btn" class="link-btn">今の時刻にする</button>
                 </div>
                 <div class="form-group">
                     <label for="weight-input">体重 (kg)</label>
@@ -26,6 +27,16 @@
                 <button type="submit">記録する</button>
             </form>
             <p id="message" class="message"></p>
+        </section>
+
+        <section class="backup-section">
+            <h2>バックアップ</h2>
+            <p class="hint">ブラウザのデータが消えると記録も消えます。定期的にエクスポートして保存してください。</p>
+            <div class="backup-buttons">
+                <button type="button" id="export-btn">エクスポート (JSON)</button>
+                <button type="button" id="import-btn" class="secondary">インポート</button>
+                <input type="file" id="import-file" accept="application/json,.json" hidden>
+            </div>
         </section>
 
         <section class="chart-section">

@@ -84,6 +84,46 @@ button:hover {
     background: #2980b9;
 }
 
+button.secondary {
+    background: #95a5a6;
+}
+
+button.secondary:hover {
+    background: #7f8c8d;
+}
+
+.link-btn {
+    width: auto;
+    margin-top: 6px;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    background: transparent;
+    color: #3498db;
+    border: 1px solid #3498db;
+}
+
+.link-btn:hover {
+    background: #3498db;
+    color: white;
+}
+
+.backup-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.backup-buttons button {
+    flex: 1;
+    min-width: 140px;
+}
+
+.hint {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    margin-bottom: 12px;
+}
+
 .message {
     margin-top: 10px;
     padding: 10px;
